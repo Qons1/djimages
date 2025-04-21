@@ -18,7 +18,8 @@ import dj_database_url
 
 SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = os.getenv("DEBUG", '0').lower() in ['true', '1', 't']
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS").split(" ")
+ALLOWED_HOSTS = ['djimages.onrender.com', 'localhost', '127.0.0.1']
+
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
